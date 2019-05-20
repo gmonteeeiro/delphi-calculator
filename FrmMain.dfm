@@ -17,7 +17,7 @@ object Form1: TForm1
     287)
   PixelsPerInch = 96
   TextHeight = 13
-  object Edit1: TEdit
+  object EdtVisor: TEdit
     Left = 8
     Top = 8
     Width = 214
@@ -41,6 +41,7 @@ object Form1: TForm1
     Height = 49
     Caption = '2'
     TabOrder = 1
+    OnClick = BtnNum1Click
   end
   object BtnNum1: TButton
     Left = 8
@@ -49,6 +50,7 @@ object Form1: TForm1
     Height = 49
     Caption = '1'
     TabOrder = 2
+    OnClick = BtnNum1Click
   end
   object BtnNum4: TButton
     Left = 8
@@ -57,6 +59,7 @@ object Form1: TForm1
     Height = 49
     Caption = '4'
     TabOrder = 3
+    OnClick = BtnNum1Click
   end
   object BtnNum3: TButton
     Left = 118
@@ -65,6 +68,7 @@ object Form1: TForm1
     Height = 49
     Caption = '3'
     TabOrder = 4
+    OnClick = BtnNum1Click
   end
   object BtnNum5: TButton
     Left = 63
@@ -73,6 +77,7 @@ object Form1: TForm1
     Height = 49
     Caption = '5'
     TabOrder = 5
+    OnClick = BtnNum1Click
   end
   object BtnNum6: TButton
     Left = 118
@@ -81,6 +86,7 @@ object Form1: TForm1
     Height = 49
     Caption = '6'
     TabOrder = 6
+    OnClick = BtnNum1Click
   end
   object BtnNum7: TButton
     Left = 8
@@ -89,6 +95,7 @@ object Form1: TForm1
     Height = 49
     Caption = '7'
     TabOrder = 7
+    OnClick = BtnNum1Click
   end
   object BtnNum8: TButton
     Left = 63
@@ -97,6 +104,7 @@ object Form1: TForm1
     Height = 49
     Caption = '8'
     TabOrder = 8
+    OnClick = BtnNum1Click
   end
   object BtnNum9: TButton
     Left = 118
@@ -105,14 +113,16 @@ object Form1: TForm1
     Height = 49
     Caption = '9'
     TabOrder = 9
+    OnClick = BtnNum1Click
   end
   object BtnNum0: TButton
-    Left = 8
+    Left = 63
     Top = 232
-    Width = 104
+    Width = 49
     Height = 49
     Caption = '0'
     TabOrder = 10
+    OnClick = BtnNum1Click
   end
   object BtnEqual: TButton
     Left = 118
@@ -153,5 +163,14 @@ object Form1: TForm1
     Height = 49
     Caption = '+'
     TabOrder = 15
+  end
+  object BtnClear: TButton
+    Left = 8
+    Top = 232
+    Width = 49
+    Height = 49
+    Caption = 'C'
+    TabOrder = 16
+    OnClick = BtnClearClick
   end
 end

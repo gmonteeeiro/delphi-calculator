@@ -8,7 +8,7 @@ uses
 
 type
   TForm1 = class(TForm)
-    Edit1: TEdit;
+    EdtVisor: TEdit;
     BtnNum2: TButton;
     BtnNum1: TButton;
     BtnNum4: TButton;
@@ -24,6 +24,9 @@ type
     BtnMult: TButton;
     BtnDiv: TButton;
     BtnSom: TButton;
+    BtnClear: TButton;
+    procedure BtnClearClick(Sender: TObject);
+    procedure BtnNum1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,5 +39,28 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.BtnClearClick(Sender: TObject);
+begin
+  EdtVisor.Text := '0';
+end;
+
+procedure TForm1.BtnNum1Click(Sender: TObject);
+var
+  numClick :string;
+  num : string;
+begin
+  num := EdtVisor.Text;
+
+  if num = '0' then
+  begin
+    num := '';
+  end;
+
+  numClick := TEdit(Sender).Text;
+  num := num + numClick;
+  EdtVisor.Text := num;
+
+end;
 
 end.
